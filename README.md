@@ -1,31 +1,30 @@
-# SQL Queries for the Chinook Database
+# SQL-запросы для базы данных Chinook
 
-## Description
+## Описание
 
-This project contains a collection of SQL queries developed for the **Chinook** sample database.
+Проект содержит коллекцию из 29 SQL-запросов, разработанных для учебной базы данных Chinook.
 
-The database represents a digital music store and contains information about customers, employees, invoices, tracks, albums, artists, genres, and sales.
+База данных представляет собой цифровой музыкальный магазин и содержит информацию о клиентах, сотрудниках, счетах, треках, альбомах, исполнителях, жанрах и продажах.
 
-The project demonstrates practical SQL skills through real-world business scenarios, including customer analysis, sales reporting, revenue calculations, and music catalog analysis.
+Проект демонстрирует практическое применение SQL в различных бизнес-сценариях, включая анализ клиентов, формирование отчётов о продажах, расчёт выручки и анализ музыкального каталога.
 
 ---
 
-## Database
+## База данных
 
-The project uses the **Chinook SQLite database**.
+В проекте используется база данных **Chinook SQLite**.
 
-The database file is included in this repository:
+Файл базы данных находится в репозитории:
 
-```
 Database/Chinook_Sqlite.sqlite
-```
 
-Database source:
+Источник базы данных:
+репозиторий Chinook Database
 https://github.com/lerocha/chinook-database
 
 ---
 
-## Technologies
+## Технологии
 
 - SQL
 - SQLite
@@ -33,85 +32,80 @@ https://github.com/lerocha/chinook-database
 
 ---
 
-## Database Schema
+## Структура базы данных
 
-Main tables used in the project:
+Основные таблицы, используемые в проекте:
 
-- **Customer** — customer information
-- **Employee** — employee and support representative information
-- **Invoice** — purchase invoices
-- **InvoiceLine** — purchased tracks and quantities
-- **Track** — music track information
-- **Album** — album information
-- **Artist** — artist information
-- **Genre** — music genres
-- **MediaType** — track file formats
+- **Customer** — информация о клиентах
+- **Employee** — информация о сотрудниках и представителях службы поддержки
+- **Invoice** — счета за покупки
+- **InvoiceLine** — приобретённые треки и их количество
+- **Track** — информация о музыкальных треках
+- **Album** — информация об альбомах
+- **Artist** — информация об исполнителях
+- **Genre** — музыкальные жанры
+- **MediaType** — форматы файлов треков
 
 ---
 
-## Query Categories
+## Категории запросов
 
-### 1_Customers
+### 1_Клиенты
 
 01_Get_full_user_information
 02_Get_the_number_of_users
 
-### 2_Sales
+### 2_Продажи
 
 03_Get_purchase_history_of_user
 04_Analyze_revenue
 
-### 3_Tracks
+### 3_Треки
 
 05_Get_full_track_information
 06_Get_tracks_statistics
 
-### 4_Artists
+### 4_Исполнители
 
 07_Get_artist_information
 08_Get_artists_statistics
 
 ---
 
-## Features
+## Возможности
 
-- Data filtering and searching
-- Table joins (`INNER JOIN`, `LEFT JOIN`)
-- Aggregation (`COUNT`, `SUM`, `AVG`)
-- Window functions (`RANK`)
-- Subqueries
-- Business metrics calculation
-- Sales and revenue analysis
+- Фильтрация и поиск данных
+- Объединение таблиц (```INNER JOIN```, ```LEFT JOIN```)
+- Агрегация данных (```COUNT```, ```SUM```, ```AVG```)
+- Оконные функции (```RANK```)
+- Подзапросы
+- Расчёт бизнес-метрик
+- Анализ продаж и выручки
 
 ---
 
-## Requirements
-
-- SQLite database (Chinook)
+## Требования
+- База данных SQLite (Chinook)
 - DBeaver
 
-### Steps
+---
 
-1. Download repository
+## Запуск проекта
 
-```bash
-git clone https://github.com/username/SQL-Chinook-Analysis.git
-```
+1. Клонировать репозиторий
 
-2. Open **DBeaver**
+  https://github.com/username/SQL-Chinook-Analysis.git
 
-3. Create a new database connection:
+2. Открыть **DBeaver**
 
-```
-New Database Connection → SQLite
-```
+3. Создать новое подключение к базе данных:
 
-4. Select the database file:
+  ```New Database Connection → SQLite```
 
-```
-Database/Chinook_Sqlite.sqlite
-```
+4. Выбрать файл базы данных:
 
-5. Open SQL scripts from the `SQL` folder
+  ```Database/Chinook_Sqlite.sqlite```
 
-6. Execute queries in DBeaver
+5. Открыть SQL-скрипты из папки ```SQL```
+
+6. Выполнить запросы в DBeaver
